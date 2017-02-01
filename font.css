@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'SohoStdBold';
+    src: url('font/soho/soho_std_bold-webfont.eot');
+    src: url('font/soho/soho_std_bold-webfont-.eot') format('embedded-opentype'),
+         url('font/soho/soho_std_bold-webfont.woff') format('woff'),
+         url('font/soho/soho_std_bold-webfont.ttf') format('truetype'),
+         url('font/soho/soho_std_bold-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SohoStdRegular';
+    src: url('font/soho/soho_std_regular-webfont.eot');
+    src: url('font/soho/soho_std_regular-webfont-.eot') format('embedded-opentype'),
+         url('font/soho/soho_std_regular-webfont.woff') format('woff'),
+         url('font/soho/soho_std_regular-webfont.ttf') format('truetype'),
+         url('font/soho/soho_std_regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DIN FONT FAMILY */
+@font-face {
+    font-family: 'din-boldregular';
+    src: url('font/din/din-bold-webfont.eot');
+    src: url('font/din/din-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/din/din-bold-webfont.woff2') format('woff2'),
+         url('font/din/din-bold-webfont.woff') format('woff'),
+         url('font/din/din-bold-webfont.ttf') format('truetype'),
+         url('font/din/din-bold-webfont.svg#din-boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dinregular';
+    src: url('font/din/din-medi-webfont.eot');
+    src: url('font/din/din-medi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/din/din-medi-webfont.woff2') format('woff2'),
+         url('font/din/din-medi-webfont.woff') format('woff'),
+         url('font/din/din-medi-webfont.ttf') format('truetype'),
+         url('font/din/din-medi-webfont.svg#dinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din-lightregular';
+    src: url('font/din/dinli3-webfont.eot');
+    src: url('font/din/dinli3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/din/dinli3-webfont.woff2') format('woff2'),
+         url('font/din/dinli3-webfont.woff') format('woff'),
+         url('font/din/dinli3-webfont.ttf') format('truetype'),
+         url('font/din/dinli3-webfont.svg#din-lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dinmedium';
+    src: url('font/din/dinme4-webfont.eot');
+    src: url('font/din/dinme4-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/din/dinme4-webfont.woff2') format('woff2'),
+         url('font/din/dinme4-webfont.woff') format('woff'),
+         url('font/din/dinme4-webfont.ttf') format('truetype'),
+         url('font/din/dinme4-webfont.svg#dinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dinschriftregular';
+    src: url('font/din/dinen2-webfont.eot');
+    src: url('font/din/dinen2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/din/dinen2-webfont.woff2') format('woff2'),
+         url('font/din/dinen2-webfont.woff') format('woff'),
+         url('font/din/dinen2-webfont.ttf') format('truetype'),
+         url('font/din/dinen2-webfont.svg#dinschriftregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*** PT SANS ***/
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('font/ptsans/pt_sans-web-regular-webfont.eot');
+    src: url('font/ptsans/pt_sans-web-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ptsans/pt_sans-web-regular-webfont.woff') format('woff'),
+         url('font/ptsans/pt_sans-web-regular-webfont.ttf') format('truetype'),
+         url('font/ptsans/pt_sans-web-regular-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url('font/ptsans/pt_sans-web-bold-webfont.eot');
+    src: url('font/ptsans/pt_sans-web-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ptsans/pt_sans-web-bold-webfont.woff') format('woff'),
+         url('font/ptsans/pt_sans-web-bold-webfont.ttf') format('truetype'),
+         url('font/ptsans/pt_sans-web-bold-webfont.svg#pt_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansbold_italic';
+    src: url('font/ptsans/pt_sans-web-bolditalic-webfont.eot');
+    src: url('font/ptsans/pt_sans-web-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ptsans/pt_sans-web-bolditalic-webfont.woff') format('woff'),
+         url('font/ptsans/pt_sans-web-bolditalic-webfont.ttf') format('truetype'),
+         url('font/ptsans/pt_sans-web-bolditalic-webfont.svg#pt_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_sansitalic';
+    src: url('font/ptsans/pt_sans-web-italic-webfont.eot');
+    src: url('font/ptsans/pt_sans-web-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/ptsans/pt_sans-web-italic-webfont.woff') format('woff'),
+         url('font/ptsans/pt_sans-web-italic-webfont.ttf') format('truetype'),
+         url('font/ptsans/pt_sans-web-italic-webfont.svg#pt_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*** OPEN SANS ***/
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('font/opensans/opensans-bold-webfont.eot');
+    src: url('font/opensans/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-bold-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-bold-webfont.woff') format('woff'),
+         url('font/opensans/opensans-bold-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('font/opensans/opensans-bolditalic-webfont.eot');
+    src: url('font/opensans/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-bolditalic-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-bolditalic-webfont.woff') format('woff'),
+         url('font/opensans/opensans-bolditalic-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('font/opensans/opensans-extrabold-webfont.eot');
+    src: url('font/opensans/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-extrabold-webfont.woff') format('woff'),
+         url('font/opensans/opensans-extrabold-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('font/opensans/opensans-extrabolditalic-webfont.eot');
+    src: url('font/opensans/opensans-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-extrabolditalic-webfont.woff') format('woff'),
+         url('font/opensans/opensans-extrabolditalic-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-extrabolditalic-webfont.svg#open_sansextrabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sans_condensedbold';
+    src: url('font/opensans/opensans-condbold-webfont.eot');
+    src: url('font/opensans/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-condbold-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-condbold-webfont.woff') format('woff'),
+         url('font/opensans/opensans-condbold-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-condbold-webfont.svg#open_sans_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('font/opensans/opensans-condlight-webfont.eot');
+    src: url('font/opensans/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-condlight-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-condlight-webfont.woff') format('woff'),
+         url('font/opensans/opensans-condlight-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-condlight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansCnLtIt';
+    src: url('font/opensans/opensans-condlightitalic-webfont.eot');
+    src: url('font/opensans/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-condlightitalic-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-condlightitalic-webfont.woff') format('woff'),
+         url('font/opensans/opensans-condlightitalic-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-condlightitalic-webfont.svg#open_sansCnLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('font/opensans/opensans-italic-webfont.eot');
+    src: url('font/opensans/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-italic-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-italic-webfont.woff') format('woff'),
+         url('font/opensans/opensans-italic-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('font/opensans/opensans-light-webfont.eot');
+    src: url('font/opensans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-light-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-light-webfont.woff') format('woff'),
+         url('font/opensans/opensans-light-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('font/opensans/opensans-lightitalic-webfont.eot');
+    src: url('font/opensans/opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-lightitalic-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-lightitalic-webfont.woff') format('woff'),
+         url('font/opensans/opensans-lightitalic-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-lightitalic-webfont.svg#open_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('font/opensans/opensans-regular-webfont.eot');
+    src: url('font/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-regular-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-regular-webfont.woff') format('woff'),
+         url('font/opensans/opensans-regular-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('font/opensans/opensans-semibold-webfont.eot');
+    src: url('font/opensans/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-semibold-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-semibold-webfont.woff') format('woff'),
+         url('font/opensans/opensans-semibold-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('font/opensans/opensans-semibolditalic-webfont.eot');
+    src: url('font/opensans/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/opensans/opensans-semibolditalic-webfont.woff2') format('woff2'),
+         url('font/opensans/opensans-semibolditalic-webfont.woff') format('woff'),
+         url('font/opensans/opensans-semibolditalic-webfont.ttf') format('truetype'),
+         url('font/opensans/opensans-semibolditalic-webfont.svg#open_sanssemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*
+RALEWAY
+*/
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('font/raleway/raleway-bold-webfont.eot');
+    src: url('font/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-bold-webfont.woff') format('woff'),
+         url('font/raleway/raleway-bold-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('font/raleway/raleway-extrabold-webfont.eot');
+    src: url('font/raleway/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-extrabold-webfont.woff') format('woff'),
+         url('font/raleway/raleway-extrabold-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('font/raleway/raleway-extralight-webfont.eot');
+    src: url('font/raleway/raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-extralight-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-extralight-webfont.woff') format('woff'),
+         url('font/raleway/raleway-extralight-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-extralight-webfont.svg#ralewayextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayheavy';
+    src: url('font/raleway/raleway-heavy-webfont.eot');
+    src: url('font/raleway/raleway-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-heavy-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-heavy-webfont.woff') format('woff'),
+         url('font/raleway/raleway-heavy-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-heavy-webfont.svg#ralewayheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('font/raleway/raleway-light-webfont.eot');
+    src: url('font/raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-light-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-light-webfont.woff') format('woff'),
+         url('font/raleway/raleway-light-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('font/raleway/raleway-medium-webfont.eot');
+    src: url('font/raleway/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-medium-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-medium-webfont.woff') format('woff'),
+         url('font/raleway/raleway-medium-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('font/raleway/raleway-regular-webfont.eot');
+    src: url('font/raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-regular-webfont.woff') format('woff'),
+         url('font/raleway/raleway-regular-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('font/raleway/raleway-semibold-webfont.eot');
+    src: url('font/raleway/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-semibold-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-semibold-webfont.woff') format('woff'),
+         url('font/raleway/raleway-semibold-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('font/raleway/raleway-thin-webfont.eot');
+    src: url('font/raleway/raleway-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url('font/raleway/raleway-thin-webfont.woff') format('woff'),
+         url('font/raleway/raleway-thin-webfont.ttf') format('truetype'),
+         url('font/raleway/raleway-thin-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

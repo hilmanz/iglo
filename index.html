@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>IGLO</title>
+
+  <!--[if lte IE 8]>
+
+  <![endif]-->
+
+    <meta name="description" content="">
+
+    <link rel="image_src" href="images/home_logo_s.png" />
+
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="img/favicon-32.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="iglo.css">
+    <link rel="stylesheet" type="text/css" media="all" href="font.css">
+    <link href="vendor/bxslider-4/dist/jquery.bxslider.css" rel="stylesheet" />
+    <script type='text/javascript' src='js/jquery-1.8.0.min.js'></script>
+    <script src="vendor/bxslider-4/dist/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/iglo.js"></script>
+
+    <style>
+    .clip-svg {
+        width: 0;
+        height: 0;
+    }
+
+    .polygon-each {
+        /*padding: 10px;*/
+        text-align: center;
+    }
+
+    .polygon-each-img-wrap img {
+        /*margin-bottom: 10px;*/
+        /*width: 100% !important;*/
+    }
+
+
+
+    @-moz-document url-prefix() {
+        .nothing {}
+        .svg-normal-mask-left {
+            -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            -webkit-clip-path: url("#polygon-clip-rhombus-left");
+            clip-path: url("#polygon-clip-rhombus-left");
+            margin:0 auto;
+            left:-25px;
+            width:720px !important;
+            height: 720px !important;
+
+        }
+        .svg-normal-mask-right {
+            -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            -webkit-clip-path: url("#polygon-clip-rhombus-right");
+            clip-path: url("#polygon-clip-rhombus-right");
+            margin:0 auto;
+            width:720px !important;
+            height: 720px !important;
+            left:-20px;
+        }
+
+        .bx-wrapper img {
+            max-width: inherit;
+        }
+        #home #laces {
+            top:40px;
+        }
+        #home .shade-right {
+            left:302px;
+            top:-35px;
+        }
+        #home .shade-left {
+            left:-798px;
+        }
+    }
+    </style>
+
+    <script>
+    $(document).ready(function() { //when the document is ready...
+    	$('#slider1').bxSlider({
+    		  auto: true,
+    		  // auto: false,
+    		  controls: false,
+    		  pager: false,
+    		  pause: 2200
+    	});
+
+    	$('#slider2').bxSlider({
+    		auto: true,
+    		controls: false,
+    		pause: 3000,
+    		pager: false
+    	});
+
+        /*if( navigator.userAgent.match(/Android|webOS|iPhone|iPod|BlackBerry/i) ) {
+            window.location.href = 'index-mobile.html';
+        }*/
+    });
+    </script>
+    <script type="text/javascript">
+        jQuery(function( $ ){
+            $("#wtb").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#wtb_page").offset().top
+                }, 2000);
+                return false;
+            });
+        });
+    </script>
+</head>
+
+<body class="bg">
+  <div id="wait">
+    <div id="wait-txt">
+      <span>chargement</span>
+    </div>
+  </div>
+
+  <div id="post-wait"></div>
+
+  <div id="content">
+      <div id="marginHead">
+          <ul id="menu">
+            <li class="current"><a href="#/page/prod-slide">HOME<div class="menutxt"><img src="img/arrow-menu-dn.png" alt=""></div><div class="bloc"></div></a></li>
+            <li><a href="products.html">Our Products<div class="menutxt"><img src="img/arrow-menu-dn.png" alt=""></div><div class="bloc"></div></a></li>
+            <li><a href="about.html">About Us<div class="menutxt"><img src="img/arrow-menu-dn.png" alt=""></div><div class="bloc"></div></a></li>
+            <li><a href="" id="wtb">Where to Buy<div class="menutxt"><img src="img/arrow-menu-dn.png" alt=""></div><div class="bloc"></div></a></li>
+            <!-- <li><a href="#">Videos<div class="menutxt"><img src="img/arrow-menu-dn.png" alt=""></div><div class="bloc"></div></a></li> -->
+          </ul>
+      </div>
+
+    <div id="home" class="page">
+        <div class="page-content">
+            <div class="parallax p1 home-slider">
+                <div id="laces">
+                    <img src="images/lace-1.png" id="lace1" alt="">
+                    <img src="images/lace-2.png" id="lace2" alt="">
+                </div>
+                <div class="txt">
+                    <img src="images/home_logo_s.png" alt="IGLO">
+                </div>
+                <div class="shade-left">
+                    <img src="images/intro_shade_left.png">
+                </div>
+                <div class="shade-right">
+                    <img src="images/intro_shade_right.png">
+                </div>
+                <div class="homeslider">
+                    <div style="width:50%; float:left;margin-top:50px;">
+                        <div class="polygon-each">
+                            <div class="polygon-each-img-wrap">
+                                <div class="svg-normal-mask-left">
+                                    <ul class="bxslider" id="slider1">
+                                        <li><img src="images/slideshow/idx_01.jpg" /></li>
+                                        <li><img src="images/slideshow/idx_02.jpg" /></li>
+                                        <li><img src="images/slideshow/idx_03.jpg" /></li>
+                                        <li><img src="images/slideshow/idx_04.jpg" /></li>
+                                        <li><img src="images/slideshow/idx_05.jpg" /></li>
+                                        <li><img src="images/slideshow/idx_10.jpg" /></li>
+                                        <li><img src="images/slideshow/idx_12.jpg" /></li>
+                                        <li><img src="images/slideshow/idx_14.jpg" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <svg class="clip-svg">
+                              <defs>
+                                <clipPath id="polygon-clip-rhombus-left" clipPathUnits="objectBoundingBox">
+                                  <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div style="width:50%; float:left;margin-top:50px;">
+                        <div class="polygon-each" style="z-index: 30">
+                            <div class="polygon-each-img-wrap">
+                                <div class="svg-normal-mask-right">
+                                <ul class="bxslider" id="slider2">
+                                    <li><img src="images/slideshow/idx_06.jpg" /></li>
+                                    <li><img src="images/slideshow/idx_10.jpg" /></li>
+                                    <li><img src="images/slideshow/idx_07.jpg" /></li>
+                                    <li><img src="images/slideshow/idx_08.jpg" /></li>
+                                    <li><img src="images/slideshow/idx_09.jpg" /></li>
+                                    <li><img src="images/slideshow/idx_11.jpg" /></li>
+                                    <li><img src="images/slideshow/idx_13.jpg" /></li>
+                                    <li><img src="images/slideshow/idx_15.jpg" /></li>
+                                </ul>
+                                </div>
+                            </div>
+                            <svg class="clip-svg">
+                              <defs>
+                                <clipPath id="polygon-clip-rhombus-right" clipPathUnits="objectBoundingBox">
+                                  <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div><!-- .homeslider -->
+            </div><!-- parallax for homeslider -->
+        </div><!-- .page-content -->
+
+        <!-- Products Feature -->
+        <div class="products-feature" style="width:1280px;margin:0 auto;position:relative;">
+            <img src="img/products-0.png" alt="" class="parallax p0 t0">
+            <img src="img/prod_idx_01.png" alt="" class="parallax p2 pic-01">
+            <img src="img/prod_idx_b1.png" alt="" class="parallax p3 b1">
+            <img src="img/prod_idx_s1.png" alt="" class="parallax p5 s1">
+            <div class="parallax p2 d1">
+                <h2><span style="color:#00a1d2">1-STEP</span> CLEANER &amp; LUBRICANT</h2>
+                <p>Membersihkan sekaligus melumasi rantai, kabel rem, dll. Kotoran minyak lama dan bekas karat larut seketika dan digantikan dengan pelumas baru.</p>
+                <p>Terbuat dari minyak synthetic dengan formula khusus yang mengandung silicone, sehingga bisa tahan untuk perjalanan sampai 100 miles.</p>
+            </div>
+
+            <img src="img/prod_idx_02.png" alt="" class="parallax p5 pic-02">
+            <img src="img/prod_idx_s2.png" alt="" class="parallax p4 s2">
+            <div class="parallax p1 d2">
+                <h2><span style="color:#679831">DISC BRAKE</span> CLEANER</h2>
+                <p>Membersihkan secara tuntas kotoran berminyak pada rantai sepeda, bebas dari korosi, aman untuk karet dan plastik karena tidak mengandung minyak tanah.</p>
+            </div>
+
+            <img src="img/prod_idx_03.png" alt="" class="parallax p0 pic-03">
+            <img src="img/prod_idx_s3.png" alt="" class="parallax p2 s3">
+            <div class="parallax p5 d3">
+                <h2><span style="color:#e99a00">CHAIN &amp; GEAR</span> CLEANER</h2>
+                <p>Membersihkan secara tuntas kotoran berminya pada rantai sepeda, bebas dari korosi, aman untuk karet dan plastik karena tidak mengandung minyak tanah.</p>
+            </div>
+
+            <a href="products.html"><img src="img/seemore.png" alt="" class="parallax p3 more-prod"></a>
+        </div>
+      
+        <img src="img/wheretobuy-title.png" alt="" class="wheretobuy-title">
+        <div class="text" id="wtb_page">
+            <div class="member member1">
+              <img src="images/shop_lazada.png" alt="lazada">
+            </div>
+            <div class="member member2">
+              <img src="images/shop_elevenia.png" alt="elevenia">
+            </div>
+            <div class="member member3">
+              <img src="images/shop_ralali.png" alt="Ralali">
+            </div>
+            <div class="member member4">
+                <img src="images/shop_superindo.png" alt="SuperIndo">
+            </div>
+            <div class="member member5">
+                <img src="images/shop_aeon.png" alt="AEON">
+            </div>
+            <div class="member member6">
+                <img src="images/shop_unitedbike.png" alt="United Bike">
+            </div>
+            <div class="member member7">
+                <img src="images/shop_sepedakita.png" alt="Sepeda Kita">
+            </div>
+            <div class="member member7">
+                <img src="images/shop-KEM-CHICKS.png" alt="Kem Chick">
+            </div>
+            <div class="member member7">
+                <img src="images/shop-giant-extra.png" alt="Giant Extra">
+            </div>
+        </div>
+        <img src="img/wheretobuy-top.png" alt="" class="black-top">
+    </div><!-- #home .page -->
+
+    <div id="contact" class="page">
+      <div class="text">
+        <div class="address">
+            <h4>LOCATION</h4>
+            <h3>PT COMMOTRADE</h3>
+			<p>Kawasan Industri Pulogadung<br/>
+                Jl. Rawa Terate 2 No.14<br/>
+                Jakarta, 13930 Indonesia<br/><br/>
+                Tel. (021) 4600076<br/>
+                Email. ptcommotrade@gmail.com
+            </p>
+		</div>
+        <div class="navigation">
+            <h4>NAVIGATION</h4>
+			<ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="#">Where to Buy</a></li>
+                <li><a href="#">Videos</a></li>
+            </ul>
+        </div>
+      </div>
+    </div><!-- #contact .page -->
+    <!--<div id="next-section"></div>-->
+    <div id="footer">
+        <p id="credits"><span>2017 All Rights Reserved - PT Commotrade Indonesia</span></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>IGLO</title>
+
+  <!--[if lte IE 8]>
+
+  <![endif]-->
+
+  <meta name="description" content="">
+
+<link rel="image_src" href="images/home_logo_s.png" />
+
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" href="img/favicon-32.png" />
+<link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" media="all" href="iglo.css">
+<link rel="stylesheet" type="text/css" media="all" href="mobile.css">
+<link rel="stylesheet" type="text/css" media="all" href="font.css">
+<link href="vendor/bxslider-4/dist/jquery.bxslider.css" rel="stylesheet">
+
+
+
+
+<style>
+@-moz-document url-prefix() {
+    .nothing {}
+
+    #home #laces {
+        top:40px;
+    }
+    #home .shade-right {
+        left:302px;
+        top:-35px;
+    }
+    #home .shade-left {
+        left:-798px;
+    }
+}
+</style>
+
+<script>
+$(document).ready(function() { //when the document is ready...
+	$('#slider1').bxSlider({
+		  auto: true,
+		  // auto: false,
+		  controls: false,
+		  pager: false,
+		  pause: 2200
+	});
+});
+</script>
+</head>
+
+<body class="bg">
+  <div id="wait">
+    <div id="wait-txt">
+      <span>chargement</span>
+    </div>
+  </div>
+
+  <div id="post-wait"></div>
+
+  <div id="content">
+      <div class="navbar-wrapper">
+        <div class="container">
+
+          <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">MENU</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/home_logo_s.png" height="30px" alt="IGLO"></a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#about">Our Products</a></li>
+                  <li><a href="#contact">About Us</a></li>
+                  <li><a href="#contact">Where to Buy</a></li>
+                  <li><a href="#contact">Videos</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    <div id="home" class="page">
+        <!--<div class="page-content">
+                <div id="laces">
+                    <img src="images/lace-1.png" id="lace1" alt="">
+                    <img src="images/lace-2.png" id="lace2" alt="">
+                </div>
+                <div class="txt">
+                    <img src="images/home_logo_s.png" alt="IGLO">
+                </div>
+        </div>--><!-- .page-content -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/slideshow/idx_01.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_02.jpg" alt="Second slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_03.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_03.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_03.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_04.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_05.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_10.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_12.jpg" alt="Third slide">
+                </div>
+                <div class="item">
+                  <img src="images/slideshow/idx_14.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div><!-- /.carousel -->
+        <div class="container">
+            <!-- START THE FEATURETTES -->
+            <div class="row">
+                <div class="col-md-5 col-sm-5">
+                  <img class="img-responsive" src="img/mobile/prod_idx_01.png" alt="1-STEP CLEANER &amp; LUBRICANT">
+                </div>
+              <div class="col-md-7 col-sm-7">
+                  <h2><span style="color:#00a1d2">1-STEP</span> CLEANER &amp; LUBRICANT</h2>
+                  <p>Membersihkan sekaligus melumasi rantai, kabel rem, dll. Kotoran minyak lama dan bekas karat larut seketika dan digantikan dengan pelumas baru.</p>
+                  <p>Terbuat dari minyak synthetic dengan formula khusus yang mengandung silicone, sehingga bisa tahan untuk perjalanan sampai 100 miles.</p>
+              </div>
+            </div>
+            <div class="featurette-divider"></div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-2">
+                            <img class="img-responsive center-block" src="img/mobile/prod_idx_02.png" alt="Disc Brake Cleaner">
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h2><span style="color:#679831">DISC BRAKE</span> CLEANER</h2>
+                            <p>Membersihkan secara tuntas kotoran berminyak pada rantai sepeda, bebas dari korosi, aman untuk karet dan plastik karena tidak mengandung minyak tanah.</p>
+                        </div>
+                        <div class="featurette-divider"></div>
+                        <div class="col-md-2 col-sm-2">
+                            <img class="img-responsive center-block" src="img/mobile/prod_idx_03.png" alt="Chain and Gear Cleaner">
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <h2><span style="color:#e99a00">CHAIN &amp; GEAR</span> CLEANER</h2>
+                            <p>Membersihkan secara tuntas kotoran berminya pada rantai sepeda, bebas dari korosi, aman untuk karet dan plastik karena tidak mengandung minyak tanah.</p>
+                        </div>
+                        <div class="featurette-divider"></div>
+                        <div class="text-center"><a href="products.html"><img src="img/seemore.png" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /END THE FEATURETTES -->
+            <img src="img/wheretobuy-title.png" alt="" class="wheretobuy-title">
+            <div class="row shops center-block">
+                <div class="col-md-2 col-sm-2 v-center">
+                    <img src="images/shop_lazada.png" alt="lazada">
+                </div>
+                <div class="col-md-2 col-sm-2 v-center">
+                    <img src="images/shop_elevenia.png" alt="elevenia">
+                </div>
+                <div class="col-md-2 col-sm-2 v-center">
+                    <img src="images/shop_ralali.png" alt="ralali">
+                </div>
+                <div class="col-md-1 col-sm-1 v-center">
+                    <img src="images/shop_superindo.png" alt="superindo">
+                </div>
+                <div class="col-md-2 col-sm-2 v-center">
+                    <img src="images/shop_aeon.png" alt="aeon">
+                </div>
+                <div class="col-md-2 col-sm-2 v-center">
+                    <img src="images/shop_unitedbike.png" alt="united bike">
+                </div>
+                <div class="col-md-1 col-sm-1 v-center">
+                    <img src="images/shop_sepedakita.png" alt="speda kita">
+                </div>
+            </div>
+        </div><!-- .container -->
+
+        <img src="img/wheretobuy-top.png" alt="" class="black-top">
+    </div><!-- #home .page -->
+
+    <div id="contact" class="page">
+      <div class="text">
+        <div class="address">
+            <h4>LOCATION</h4>
+            <h3>PT COMMOTRADE</h3>
+			<p>Kawasan Industri Pulogadung<br/>
+                Jl. Rawa Terate 2 No.14<br/>
+                Jakarta, 13930 Indonesia<br/><br/>
+                Tel. (021) 4600076<br/>
+                Email. ptcommotrade@gmail.com
+            </p>
+		</div>
+        <div class="navigation">
+            <h4>NAVIGATION</h4>
+			<ul class="footer-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="#">Where to Buy</a></li>
+                <li><a href="#">Videos</a></li>
+            </ul>
+        </div>
+      </div>
+    </div><!-- #contact .page -->
+    <!--<div id="next-section"></div>-->
+    <div id="footer">
+	  <p id="credits"><span>2017 All Rights Reserved - PT Commotrade Indonesia</span></p>
+    </div>
+  </div>
+  <!--<script type='text/javascript' src='js/jquery/jquery90f9.js?ver=1.11.1'></script>-->
+
+  <!--<script type="text/javascript" src="js/libs/jquery-1.7.0.min.js"></script>
+  <script type='text/javascript' src='js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery/jquery.1.12.4.min.js"><\/script>')</script>
+
+  <script src="vendor/bootstrap/js/bootstrap.js"></script>
+  <script src="vendor/bxslider-4/dist/jquery.bxslider.js"></script>
+  <script type="text/javascript" src="js/libs/modernizr.custom.26887.js"></script>
+  <script type="text/javascript" src="js/jquery.address-1.5.min.js"></script>
+  <script type="text/javascript" src="js/jquery.color.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jQueryRotateCompressed.2.2.js"></script>
+  <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="js/iglo.js"></script>
+
+  <script type="text/javascript" src="js/libs/slides.min.jquery.js"></script>
+</body>
+</html>
