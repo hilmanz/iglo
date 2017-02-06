@@ -1035,6 +1035,12 @@ text-align: center;
 }
 
 /* Products List */
+.ourprodlist {
+    list-style: decimal;
+    margin-top: 8px;
+    margin-left: 18px;
+    line-height: 1.3;
+}
 #igloproducts .parallax h2.section-title,
 #igloproducts .parallax h5.section-title {
     font-family: 'dinschriftregular';
@@ -1084,7 +1090,7 @@ text-align: center;
 #igloproducts .parallax.p3.prod01-pic {
     margin-top: 700px;
     left: 50%;
-    margin-left: -528px;
+    margin-left: -400px;
     z-index: 3;
 }
 #igloproducts .parallax.p2.prod01-splat {
@@ -1232,12 +1238,72 @@ text-align: center;
     margin-left: -410px;
     z-index: 1;
 }
-.ourprodlist {
-    list-style: decimal;
-    margin-top: 8px;
-    margin-left: 18px;
-    line-height: 1.3;
+
+/*Products 06*/
+#igloproducts .parallax.p4.prod06-pic {
+    margin-top: 2350px;
+    left: 50%;
+    margin-left: 247px;
+    z-index: 3;
 }
+#igloproducts .parallax.p0.prod06-description {
+    margin-top: 3550px;
+    left: 50%;
+    margin-left: -520px;
+    width:500px;
+}
+#igloproducts .parallax.p3.prod06-l-rhombus {
+    margin-top: 3250px;
+    left: 50%;
+    margin-left: 30px;
+    z-index: 2;
+}
+#igloproducts .parallax.p5.prod06-r-rhombus {
+    margin-top: 3800px;
+    left: 50%;
+    margin-left: 240px;
+    z-index: 2;
+}
+#igloproducts .parallax.p2.prod06-splat {
+    margin-top: 2900px;
+    left: 50%;
+    margin-left: 110px;
+    z-index: 1;
+}
+
+/*Products 07*/
+#igloproducts .parallax.p4.prod07-pic {
+    margin-top: 2900px;
+    left: 50%;
+    margin-left: -340px;
+    z-index: 3;
+}
+#igloproducts .parallax.p3.prod07-description {
+    margin-top: 3960px;
+    left: 50%;
+    margin-left: 128px;
+    width:500px;
+}
+#igloproducts .parallax.p5.prod07-l-rhombus {
+    margin-top: 4400px;
+    left: 50%;
+    margin-left: -620px;
+    z-index: 2;
+}
+#igloproducts .parallax.p1.prod07-r-rhombus {
+    margin-top: 4720px;
+    left: 50%;
+    margin-left: -410px;
+    z-index: 2;
+}
+#igloproducts .parallax.p2.prod07-splat {
+    margin-top: 3400px;
+    left: 50%;
+    margin-left: -410px;
+    z-index: 1;
+}
+
+
 
 /*WHERE TO BUY - PRODUCTS PAGE */
 #igloproducts .parallax.p3.prod-title-wtb {
